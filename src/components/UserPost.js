@@ -5,14 +5,20 @@ import heartFilledIcon from '../icons/heart-filled.png';
 import commentIcon from '../icons/comment.png';
 import shareIcon from '../icons/send.png';
 import bookmarkIcon from '../icons/bookmark.png';
+import Toast from '../components/Toast';
 
 class UserPost extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {isFilledHeartIcon: true, isCommentFilledHeartIcon: true};
+    this.state = {
+      isFilledHeartIcon: true, 
+      isCommentFilledHeartIcon: true,
+      isVisibleToast: false
+    };
     // This binding is necessary to make `this` work in the callback
     this.toggleFilledHeartIcon = this.toggleFilledHeartIcon.bind(this);
     this.toggleCommentFilledHeartIcon = this.toggleCommentFilledHeartIcon.bind(this);
+    this.toggleVisibleToast = this.toggleVisibleToast.bind(this);
   }
   toggleFilledHeartIcon() {
     this.setState(prevState => ({
@@ -22,6 +28,11 @@ class UserPost extends React.Component {
   toggleCommentFilledHeartIcon() {
     this.setState(prevState => ({
       isCommentFilledHeartIcon: !prevState.isCommentFilledHeartIcon
+    }));
+  }
+  toggleVisibleToast() {
+    this.setState(prevState => ({
+      isVisibleToast: !prevState.isVisibleToast
     }));
   }
   render() {
@@ -43,7 +54,7 @@ class UserPost extends React.Component {
         <button>
           <img alt="like" src={commentIcon}></img>
         </button>
-        <button>
+        <button onClick={this.toggleVisibleToast}>
           <img alt="like" src={shareIcon}></img>
         </button>
         <button>
@@ -73,6 +84,7 @@ class UserPost extends React.Component {
           </button>
         </div>
       ))}
+      <Toast isVisible={this.state.isVisibleToast} slot="Shared user post"></Toast>
     </div>
   )}
 }
