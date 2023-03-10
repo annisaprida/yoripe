@@ -1,4 +1,5 @@
 {
+  "homepage": "https://annisaprida.github.io/yoripe",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
