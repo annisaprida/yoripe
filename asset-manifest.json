@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/yoripe/static/css/main.029bc9ff.chunk.css",
-    "main.js": "/yoripe/static/js/main.ac177cf2.chunk.js",
-    "main.js.map": "/yoripe/static/js/main.ac177cf2.chunk.js.map",
+    "main.css": "/yoripe/static/css/main.505b6638.chunk.css",
+    "main.js": "/yoripe/static/js/main.ca224a72.chunk.js",
+    "main.js.map": "/yoripe/static/js/main.ca224a72.chunk.js.map",
     "runtime-main.js": "/yoripe/static/js/runtime-main.1e26db44.js",
     "runtime-main.js.map": "/yoripe/static/js/runtime-main.1e26db44.js.map",
-    "static/js/2.3fed206c.chunk.js": "/yoripe/static/js/2.3fed206c.chunk.js",
-    "static/js/2.3fed206c.chunk.js.map": "/yoripe/static/js/2.3fed206c.chunk.js.map",
+    "static/js/2.478029c8.chunk.js": "/yoripe/static/js/2.478029c8.chunk.js",
+    "static/js/2.478029c8.chunk.js.map": "/yoripe/static/js/2.478029c8.chunk.js.map",
     "index.html": "/yoripe/index.html",
-    "static/css/main.029bc9ff.chunk.css.map": "/yoripe/static/css/main.029bc9ff.chunk.css.map",
-    "static/js/2.3fed206c.chunk.js.LICENSE.txt": "/yoripe/static/js/2.3fed206c.chunk.js.LICENSE.txt"
+    "static/css/main.505b6638.chunk.css.map": "/yoripe/static/css/main.505b6638.chunk.css.map",
+    "static/js/2.478029c8.chunk.js.LICENSE.txt": "/yoripe/static/js/2.478029c8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1e26db44.js",
-    "static/js/2.3fed206c.chunk.js",
-    "static/css/main.029bc9ff.chunk.css",
-    "static/js/main.ac177cf2.chunk.js"
+    "static/js/2.478029c8.chunk.js",
+    "static/css/main.505b6638.chunk.css",
+    "static/js/main.ca224a72.chunk.js"
   ]
 }
