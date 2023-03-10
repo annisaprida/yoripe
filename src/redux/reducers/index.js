@@ -1,4 +1,4 @@
 import { combineReducers } from "redux";
-import userPosts from "./userComments";
+import userComments from "./userComments";
 
-export default combineReducers({ userPosts });
+export default combineReducers({ userComments });

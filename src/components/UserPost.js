@@ -6,6 +6,8 @@ import commentIcon from '../icons/comment.png';
 import shareIcon from '../icons/send.png';
 import bookmarkIcon from '../icons/bookmark.png';
 import Toast from '../components/Toast';
+import AddComment from '../components/AddComments';
+import { getComments } from "../redux/selectors";
 
 class UserPost extends React.Component {
   constructor(props) {
@@ -36,6 +38,7 @@ class UserPost extends React.Component {
     }));
   }
   render() {
+    const { comments } = this.props;
     return (
     <div className="post-container__item">
       <div className="post-container__item__user-data">
@@ -85,10 +88,15 @@ class UserPost extends React.Component {
         </div>
       ))}
       <Toast isVisible={this.state.isVisibleToast} slot="Shared user post"></Toast>
+      <AddComment meta={this.props.meta} postCreator={this.props.userPost.caption.from.username}/>
     </div>
   )}
 }
-
-export default connect(
-  null,
-)(UserPost);
+const mapStateToProps = state => {
+  const { user_comments } = state;
+  const comments = getComments(state, user_comments);
+  return { comments };
+};
+export default connect
+(mapStateToProps)
+(UserPost);

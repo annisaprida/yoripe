@@ -42,7 +42,7 @@ function App() {
         </div>
       </header>
       <StoryList data={stories}/>
-      <PostList data={data}/>
+      <PostList data={data} meta={meta}/>
       <Footer data={meta}/>
     </div>
   );

@@ -10,3 +10,5 @@ export const getUserPost = () => {
      console.error(error);
    });
 };
+
+export const getComments = store => store.comment;
